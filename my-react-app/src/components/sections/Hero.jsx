@@ -1,6 +1,7 @@
 import Button from '../common/Button'
-import ResponsiveImage from '../common/ResponsiveImage'
-
+export default function ResponsiveImage({ src, alt }) {
+  return <img src={src} alt={alt} style={{ maxWidth: "100%" }} />;
+}
 
 export default function Hero() {
 return (
