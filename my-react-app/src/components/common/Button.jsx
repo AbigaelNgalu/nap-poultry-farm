@@ -1,5 +1,13 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 
+function Button({ label, onClick }) {
+  return <button onClick={onClick}>{label}</button>;
+}
+
+Button.propTypes = {
+  label: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
 
 export default function Button({ children, variant = 'primary', className = '', ...props }) {
 const base = 'inline-flex items-center justify-center rounded-2xl px-5 py-3 font-medium focus:outline-none focus:ring-2 focus:ring-offset-2'
@@ -10,7 +18,6 @@ outline: `${base} border border-neutralDark text-neutralDark hover:bg-neutralLig
 }
 return <button className={`${variants[variant]} ${className}`} {...props}>{children}</button>
 }
-
 
 Button.propTypes = {
 children: PropTypes.node,
