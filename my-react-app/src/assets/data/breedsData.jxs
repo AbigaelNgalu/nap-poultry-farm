@@ -1,0 +1,58 @@
+const breedsData = [
+  {
+    id: 1,
+    name: "Rhode Island Red",
+    description: "Hardy dual-purpose breed, great for eggs and meat.",
+    image: "/images/rhode-island-red.jpg",
+    averageWeight: "2.5–3.9 kg",
+    eggsPerYear: 250,
+    price: "KSHS 800",
+  },
+  {
+    id: 2,
+    name: "Leghorn",
+    description: "Excellent layer, prolific egg production, lightweight body.",
+    image: "/images/leghorn.jpg",
+    averageWeight: "2–2.5 kg",
+    eggsPerYear: 300,
+    price: "KSHS 700",
+  },
+  {
+    id: 3,
+    name: "Plymouth Rock",
+    description: "Friendly dual-purpose bird, good for eggs and meat.",
+    image: "/images/plymouth-rock.jpg",
+    averageWeight: "3–4 kg",
+    eggsPerYear: 200,
+    price: "KSHS 1000",
+  },
+  {
+    id: 4,
+    name: "Sussex",
+    description: "Docile, calm, and great for backyard egg production.",
+    image: "/images/sussex.jpg",
+    averageWeight: "3–4 kg",
+    eggsPerYear: 250,
+    price: "KSHS 1200",
+  },
+  {
+    id: 5,
+    name: "Orpington",
+    description: "Large, friendly, excellent layers, suitable for meat too.",
+    image: "/images/orpington.jpg",
+    averageWeight: "3.5–4.5 kg",
+    eggsPerYear: 200,
+    price: "KSHS 1500",
+  },
+  {
+    id: 6,
+    name: "Australorp",
+    description: "Calm, excellent egg layer, highly adaptable.",
+    image: "/images/australorp.jpg",
+    averageWeight: "3–4 kg",
+    eggsPerYear: 280,
+    price: "KSHS 1100",
+  },
+];
+
+export default breedsData;

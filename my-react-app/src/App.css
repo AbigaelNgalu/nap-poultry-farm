@@ -1,0 +1,24 @@
+/* Card hover animation (if not using inline Tailwind) */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-link-active {
+  color: #4f46e5; /* Tailwind primary */
+  font-weight: 600;
+}
+
+footer {
+  padding: 2rem 0;
+  background-color: #f9fafb;
+}
+
+#hero {
+  min-height: 80vh;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    min-height: 60vh;
+  }
+}
