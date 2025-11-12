@@ -1,13 +1,25 @@
 {
   "name": "nap-poultry-farm",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "NAP Poultry Farm React App",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["react", "vite", "poultry", "farm"],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.0.0"
+  }
 }
+
