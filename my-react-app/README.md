@@ -21,10 +21,11 @@ If you are developing a production application, we recommend using TypeScript wi
 
 This repository workspace has been prepared to publish the `my-react-app` package to npm.
 
-- package name: `@AbigaelNgalu/nam-poultry-app`
-- version: `1.0.0`
-- publishConfig: `{ "access": "public" }`
 
+
+## Short package description (for npm)
+
+nam-poultry-app is a lightweight React + Vite starter for showcasing poultry breeds. It includes example components for hero, features, product showcase, stats, testimonials, and a newsletter section. Suitable for use as a small app or as the basis for a UI component package.
 ### Install
 
 After publishing, users can install the package with:
