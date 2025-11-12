@@ -21,7 +21,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 This repository workspace has been prepared to publish the `my-react-app` package to npm.
 
-- package name: `nam-poultry-app`
+- package name: `@AbigaelNgalu/nam-poultry-app`
 - version: `1.0.0`
 - publishConfig: `{ "access": "public" }`
 
@@ -30,7 +30,7 @@ This repository workspace has been prepared to publish the `my-react-app` packag
 After publishing, users can install the package with:
 
 ```bash
-npm install nam-poultry-app
+npm install @AbigaelNgalu/nam-poultry-app
 ```
 
 Or with a scoped name (if you change it first):
