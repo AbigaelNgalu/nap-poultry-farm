@@ -1,6 +1,0 @@
-// NOTE: This file is a duplicate of `breedsData.js` and uses a non-standard
-// `.jxs` extension. Keep `breedsData.js` (the canonical data file) and delete
-// this file to avoid confusion. It is left here as a deprecated placeholder.
-
-// Deprecated duplicate — do not import this file.
-export default null;
