@@ -2,8 +2,16 @@ name: Publish package on tag
 
 on:
   push:
+    # Restrict to patch releases for v1.x (safety)
     tags:
-      - 'v*.*.*'
+      - 'v1.0.*'
+  # Allow manual runs (useful for dry-run)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'If true, build only and skip publish'
+        required: false
+        default: 'false'
 
 jobs:
   publish:
@@ -12,6 +20,9 @@ jobs:
     defaults:
       run:
         working-directory: my-react-app
+    # Use input or default env to control dry-run
+    env:
+      DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
 
     steps:
       - name: Checkout repository
@@ -31,7 +42,13 @@ jobs:
       - name: Publish to npm
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          DRY_RUN: ${{ env.DRY_RUN }}
         run: |
+          echo "DRY_RUN=${DRY_RUN}"
+          if [ "${DRY_RUN}" = "true" ]; then
+            echo "DRY RUN enabled — skipping publish"
+            exit 0
+          fi
           if [ -z "$NPM_TOKEN" ]; then echo "NPM_TOKEN is not set; aborting"; exit 1; fi
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
           npm publish --access public
