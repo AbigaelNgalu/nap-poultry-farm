@@ -1,6 +1,6 @@
 // ProductShowcase.jsx
 import React from "react";
-import breedsData from "./breedsData";
+import breedsData from "../../assets/data/breedsData";
 
 const ProductShowcase = () => {
   return (
