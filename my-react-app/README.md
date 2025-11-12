@@ -31,7 +31,7 @@ nam-poultry-app is a lightweight React + Vite starter for showcasing poultry bre
 After publishing, users can install the package with:
 
 ```bash
-npm install @AbigaelNgalu/nam-poultry-app
+npm install @abigaelngalu/nam-poultry-app
 ```
 
 Or with a scoped name (if you change it first):
