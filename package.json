@@ -10,7 +10,12 @@
     "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["react", "vite", "poultry", "farm"],
+  "keywords": [
+    "react",
+    "vite",
+    "poultry",
+    "farm"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -19,7 +24,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^5.0.0"
+    "vite": "^7.2.2"
   }
 }
-
