@@ -2,6 +2,9 @@
 "name": "nap-poultry-farm",
 "version": "1.0.0",
 "private": true,
+"workspaces": [
+	"my-react-app"
+],
 "scripts": {
 "dev": "vite",
 "build": "vite build",

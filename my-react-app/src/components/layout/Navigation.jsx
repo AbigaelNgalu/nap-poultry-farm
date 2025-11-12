@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MenuIcon, XIcon } from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,9 +40,9 @@ const Navigation = () => {
         <div className="md:hidden">
           <button onClick={toggleMenu}>
             {isOpen ? (
-              <XIcon className="w-6 h-6 text-gray-700" />
+              <XMarkIcon className="w-6 h-6 text-gray-700" />
             ) : (
-              <MenuIcon className="w-6 h-6 text-gray-700" />
+              <Bars3Icon className="w-6 h-6 text-gray-700" />
             )}
           </button>
         </div>
