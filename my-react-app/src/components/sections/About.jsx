@@ -16,7 +16,7 @@ return (
 <div className="flex gap-3 mt-2">
 <a href="#" className="text-sm text-gray-200">Instagram</a>
 <a href="#" className="text-sm text-gray-200">Facebook</a>
-<a href="#" className="text-sm text-gray-200">Twitter</a>
+<a href="#" className="text-sm text-gray-200">@abigael_ngalu</a>
 </div>
 </div>
 </div>

@@ -9,7 +9,7 @@ const features = [
   {
     id: 2,
     title: "Wide Variety of Breeds",
-    description: "Choose from over 120 dog breeds to find your perfect match.",
+    description: "Choose from over 9 chicken breeds to find your perfect match.",
   },
   {
     id: 3,
