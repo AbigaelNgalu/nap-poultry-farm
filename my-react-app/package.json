@@ -1,5 +1,5 @@
 {
-  "name": "@abigaelngalu/nam-poultry-app",
+  "name": "nam-poultry-app",
   "version": "1.0.0",
   "dependencies": {
     "prop-types": "^15.8.1",
