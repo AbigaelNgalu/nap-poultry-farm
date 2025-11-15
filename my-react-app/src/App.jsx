@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import ChickenBreeds from "./ChickenBreeds";
 import Navigation from "./components/layout/Navigation";
@@ -40,12 +39,11 @@ function App() {
 
         {/* Chicken Breeds Showcase */}
         <section id="breeds" className="py-16 bg-gray-100">
-          {/* Option 1: Replace ProductShowcase with ChickenBreeds */}
-          <ChickenBreeds />
+        {/* Product showcase (existing component) */}
+        <ProductShowcase />
 
-          {/* Option 2: Keep ProductShowcase and add ChickenBreeds below */}
-          {/* <ProductShowcase />
-          <ChickenBreeds /> */}
+        {/* Your ChickenBreeds component */}
+        <ChickenBreeds />
         </section>
 
         {/* Poultry Farm Stats */}

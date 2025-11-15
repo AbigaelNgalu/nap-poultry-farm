@@ -1,17 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    // Root-level index (if you run vite from repo root)
     "./index.html",
-    // My-react-app files
     "./my-react-app/index.html",
     "./my-react-app/src/**/*.{js,jsx,ts,tsx,html}",
-    // Any other folders with markup/components
     "./my-react-app/public/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
+      colors: {
+        customPurple: '#7162a8',
+        customIndigo: '#747bff',
+      },
+    },
   },
   plugins: [],
+  darkMode: 'media', // enable light/dark mode based on system preference
 }
-
