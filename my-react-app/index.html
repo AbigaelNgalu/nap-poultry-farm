@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NAP Poultry Farm</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Example</title>
+  <link href="dist/output.css" rel="stylesheet">
+</head>
+<body class="font-sans bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
+
+  <!-- Header -->
+  <header class="p-6 bg-gray-100 dark:bg-gray-800">
+    <h1 class="text-2xl font-bold">Tailwind Example</h1>
+    <nav class="mt-2">
+      <ul class="flex gap-4 list-none m-0 p-0">
+        <li><a href="#" class="no-underline hover:text-customIndigo">Home</a></li>
+        <li><a href="#" class="no-underline hover:text-customIndigo">About</a></li>
+        <li><a href="#" class="no-underline hover:text-customIndigo">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="p-6">
+    <h2 class="text-xl font-semibold mb-4">Buttons</h2>
+    <div class="flex gap-4">
+      <button class="bg-customPurple text-white px-4 py-2 rounded focus:outline-none focus:ring-4 focus:ring-indigo-500">
+        Primary
+      </button>
+      <button class="bg-gray-300 text-gray-800 px-4 py-2 rounded focus:outline-none focus:ring-4 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white">
+        Secondary
+      </button>
+    </div>
+
+    <h2 class="text-xl font-semibold mt-6 mb-2">List Example</h2>
+    <ul class="list-none m-0 p-0 space-y-2">
+      <li class="px-2 py-1 bg-gray-100 rounded dark:bg-gray-800">Item 1</li>
+      <li class="px-2 py-1 bg-gray-100 rounded dark:bg-gray-800">Item 2</li>
+      <li class="px-2 py-1 bg-gray-100 rounded dark:bg-gray-800">Item 3</li>
+    </ul>
+  </main>
+
+</body>
 </html>

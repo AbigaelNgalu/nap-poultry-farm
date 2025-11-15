@@ -12,11 +12,11 @@ module.exports = {
         sans: ['Inter', 'sans-serif'],
       },
       colors: {
-        customPurple: '#7162a8',
-        customIndigo: '#747bff',
+        customPurple: '#7162a8', // button background
+        customIndigo: '#747bff', // link hover
       },
     },
   },
   plugins: [],
-  darkMode: 'media', // enable light/dark mode based on system preference
+  darkMode: 'media', // light/dark mode based on system preference
 }
