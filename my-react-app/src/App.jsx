@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import ChickenBreeds from "./ChickenBreeds";
 import Navigation from "./components/layout/Navigation";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
@@ -17,7 +18,7 @@ function App() {
       {/* Navigation Bar */}
       <Navigation />
 
-      {/* Header (optional hero tagline or callout) */}
+      {/* Header */}
       <Header />
 
       {/* Main Content */}
@@ -39,7 +40,12 @@ function App() {
 
         {/* Chicken Breeds Showcase */}
         <section id="breeds" className="py-16 bg-gray-100">
-          <ProductShowcase />
+          {/* Option 1: Replace ProductShowcase with ChickenBreeds */}
+          <ChickenBreeds />
+
+          {/* Option 2: Keep ProductShowcase and add ChickenBreeds below */}
+          {/* <ProductShowcase />
+          <ChickenBreeds /> */}
         </section>
 
         {/* Poultry Farm Stats */}
@@ -65,4 +71,3 @@ function App() {
 }
 
 export default App;
-
