@@ -2,9 +2,7 @@
 module.exports = {
   content: [
     "./index.html",
-    "./my-react-app/index.html",
-    "./my-react-app/src/**/*.{js,jsx,ts,tsx,html}",
-    "./my-react-app/public/**/*.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
@@ -12,11 +10,11 @@ module.exports = {
         sans: ['Inter', 'sans-serif'],
       },
       colors: {
-        customPurple: '#7162a8', // button background
-        customIndigo: '#747bff', // link hover
+        customPurple: '#7162a8',
+        customIndigo: '#747bff',
       },
     },
   },
   plugins: [],
-  darkMode: 'media', // light/dark mode based on system preference
+  darkMode: 'media',
 }
