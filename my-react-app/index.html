@@ -1,44 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind Example</title>
-  <link href="dist/output.css" rel="stylesheet">
-</head>
-<body class="font-sans bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poultry Farm Website</title>
 
-  <!-- Header -->
-  <header class="p-6 bg-gray-100 dark:bg-gray-800">
-    <h1 class="text-2xl font-bold">Tailwind Example</h1>
-    <nav class="mt-2">
-      <ul class="flex gap-4 list-none m-0 p-0">
-        <li><a href="#" class="no-underline hover:text-customIndigo">Home</a></li>
-        <li><a href="#" class="no-underline hover:text-customIndigo">About</a></li>
-        <li><a href="#" class="no-underline hover:text-customIndigo">Contact</a></li>
-      </ul>
+  <!-- Tailwind (optional, since your React app used Tailwind) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="App.css" />
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-900">
+
+  <!-- Navigation -->
+  <header class="bg-white shadow">
+    <nav class="container mx-auto py-4">
+      <!-- Navigation placeholder -->
+      <h2 class="font-bold">Navigation Bar</h2>
     </nav>
   </header>
 
-  <!-- Main content -->
-  <main class="p-6">
-    <h2 class="text-xl font-semibold mb-4">Buttons</h2>
-    <div class="flex gap-4">
-      <button class="bg-customPurple text-white px-4 py-2 rounded focus:outline-none focus:ring-4 focus:ring-indigo-500">
-        Primary
-      </button>
-      <button class="bg-gray-300 text-gray-800 px-4 py-2 rounded focus:outline-none focus:ring-4 focus:ring-indigo-500 dark:bg-gray-700 dark:text-white">
-        Secondary
-      </button>
-    </div>
+  <!-- Header -->
+  <section class="bg-gray-200 py-6 text-center">
+    <h1 class="text-3xl font-bold">Header Section</h1>
+  </section>
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">List Example</h2>
-    <ul class="list-none m-0 p-0 space-y-2">
-      <li class="px-2 py-1 bg-gray-100 rounded dark:bg-gray-800">Item 1</li>
-      <li class="px-2 py-1 bg-gray-100 rounded dark:bg-gray-800">Item 2</li>
-      <li class="px-2 py-1 bg-gray-100 rounded dark:bg-gray-800">Item 3</li>
-    </ul>
+  <!-- Main Content -->
+  <main class="flex-grow">
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-16 bg-white text-center">
+      <h2 class="text-4xl font-bold">Hero Section</h2>
+      <p>Your hero text goes here.</p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold">About Us</h2>
+        <p>About section content...</p>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-16 bg-white">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold">Our Features</h2>
+        <p>Feature details here...</p>
+      </div>
+    </section>
+
+    <!-- Chicken Breeds Showcase -->
+    <section id="breeds" class="py-16 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold">Product Showcase</h2>
+        <p>(Product showcase content here)</p>
+
+        <h2 class="text-3xl font-bold mt-12">Chicken Breeds</h2>
+        <p>(Chicken breeds info here)</p>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section id="stats" class="py-16 bg-white">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold">Farm Stats</h2>
+        <p>Statistics content...</p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold">Testimonials</h2>
+        <p>What people say...</p>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section id="newsletter" class="py-16 bg-white">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold">Newsletter Signup</h2>
+        <p>Subscribe for updates.</p>
+      </div>
+    </section>
+
   </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>© 2024 Poultry Farm — All Rights Reserved</p>
+  </footer>
 
 </body>
 </html>
