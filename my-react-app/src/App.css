@@ -4,13 +4,13 @@
 }
 
 .nav-link-active {
-  color: #4f46e5; /* Tailwind primary */
+  color: #46e5b0; /* Tailwind primary */
   font-weight: 600;
 }
 
 footer {
   padding: 2rem 0;
-  background-color: #f9fafb;
+  background-color: #60b312;
 }
 
 #hero {
